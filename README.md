@@ -1,14 +1,15 @@
 # AI in Social Care
 
-An interactive web application designed to help non-expert users explore how AI works.
+An interactive web application designed to help non-expert users explore how artificial intelligence works in social care contexts.
 
 ---
 
-## Netlify
+## Live Demo
 
-https://dissertation-app.netlify.app
+Frontend: https://dissertation-app.netlify.app
+Backend: Hosted on Render
 
-## Scan the QR code to open the link
+Users can also access the application by scanning the QR code:
 
 <img src="./public/qr-code.png" width="200" alt="QR code"/>
 
@@ -18,15 +19,15 @@ https://dissertation-app.netlify.app
 
 ### AI Quiz
 
-Short, engaging quiz to teach key AI concepts in simple terms.
+A short interactive quiz introducing key AI concepts and ethical issues such as bias and fairness.
 
 ### AI Guess Game
 
-Users answer questions, and the Gemini API attempts to guess traits (e.g. age, hobby, personality).
+Users answer short questions, and the Gemini API generates a prediction (e.g. age, hobby, personality). This demonstrates that AI outputs are based on patterns rather than genuine understanding.
 
 ### AI Image Generation
 
-Uses the Gemini API to visualise user input about AI in social care, showing users how generative AI works.
+Users enter an idea about AI in social care, and the Gemini API generates an image to show how generative AI interprets prompts.
 
 ---
 
@@ -56,6 +57,14 @@ Uses the Gemini API to visualise user input about AI in social care, showing use
 
 ---
 
+## Requirements
+
+- Node.js
+- npm
+- Google Gemini API key
+
+---
+
 ## Getting Started
 
 ### 1. Clone the repository
@@ -67,28 +76,55 @@ cd dissertation-app
 
 ### 2. Set up environment variables
 
-Create a .env file inside the server folder:
+Create a `.env` file inside the `server` folder:
 
-```bash
-GEMINI_API_KEY=api_key
+```env
+GEMINI_API_KEY=your_api_key_here
 ```
 
-### 3. Install and run
+### 3. Install frontend dependencies
 
-Frontend:
+From the project root:
 
 ```bash
 npm install
+```
+
+### 4. Run the frontend
+
+```bash
 npm start
 ```
 
-Backend:
+The frontend should run on:
+
+```text
+http://localhost:3000
+```
+
+### 5. Run the backend
+
+Open a second terminal and run:
 
 ```bash
 cd server
 npm install
 node index.js
 ```
+
+The backend should run on:
+
+```text
+http://localhost:3001
+```
+
+---
+
+## Notes
+
+The application requires a valid Gemini API key for prediction and image generation features. If the API fails or does not return a valid response, fallback outputs are displayed to maintain application continuity.
+
+---
 
 ### Author
 
