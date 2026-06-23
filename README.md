@@ -8,7 +8,7 @@ AI in Social Care combines educational content, interactive activities, and AI-p
 
 ## Features
 
-### AI Quiz
+### AI Quiz Activity
 
 - Interactive quiz introducing key AI concepts
 - Explores topics such as fairness, bias, and decision-making
@@ -20,7 +20,7 @@ AI in Social Care combines educational content, interactive activities, and AI-p
 - AI generates predictions based on response patterns
 - Demonstrates how AI makes inferences from data
 
-### AI Visualisation Activity
+### AI Visuals Activity
 
 - Users submit ideas relating to AI in social care
 - AI generates visual representations from prompts
@@ -156,15 +156,15 @@ public-engagement-app/
 
 ### AI Guess in Dark Mode
 
-![Accessibility Mode](./screenshots/guess-dark.png)
+![AI Guess](./screenshots/guess-dark.png)
 
 ### AI Guess Results
 
 ![AI Guess Results](./screenshots/guess-results.png)
 
-### AI Visual
+### AI Visuals
 
-![AI Visual](./screenshots/output.png)
+![AI Visuals](./screenshots/output.png)
 
 ### Final Results
 
