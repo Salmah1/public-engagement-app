@@ -66,8 +66,8 @@ AI in Social Care combines educational content, interactive activities, and AI-p
 Clone the repository:
 
 ```bash
-git clone https://github.com/Salmah1/dissertation-app.git
-cd dissertation-app
+git clone https://github.com/Salmah1/public-engagement-app.git
+cd public-engagement-app
 ```
 
 Install dependencies:
@@ -93,7 +93,7 @@ npm start
 ## Project Structure
 
 ```text
-dissertation-app/
+public-engagement-app/
 │
 ├── public/
 ├── screenshots/
