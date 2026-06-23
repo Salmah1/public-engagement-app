@@ -154,14 +154,18 @@ dissertation-app/
 
 ![Quiz Results](./screenshots/quiz-results.png)
 
+### AI Guess in Dark Mode
+
+![Accessibility Mode](./screenshots/guess-dark.png)
+
 ### AI Guess Results
 
 ![AI Guess Results](./screenshots/guess-results.png)
 
-### Accessibility Mode
+### AI Visual
 
-![Accessibility Mode](./screenshots/guess-dark.png)
+![AI Visual](./screenshots/output.png)
 
-### AI Visualisation Activity
+### Final Results
 
-![AI Visualisation Activity](./screenshots/output.png)
+![Final Results](./screenshots/final-result.png)
