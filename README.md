@@ -1,4 +1,4 @@
-# AI in Social Care
+# AI in Social Care: Public Engagement Application
 
 ## Overview
 
