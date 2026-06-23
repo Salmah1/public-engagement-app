@@ -63,11 +63,14 @@ function Output({
 
     try {
       // Send request to backend
-      const res = await fetch("https://dissertation-app.onrender.com/output", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt: userIdea }),
-      });
+      const res = await fetch(
+        "https://public-engagement-app.onrender.com/output",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ prompt: userIdea }),
+        },
+      );
 
       if (!res.ok) {
         throw new Error("Server error");

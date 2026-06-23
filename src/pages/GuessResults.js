@@ -30,11 +30,14 @@ function GuessResults({
     // Fetch AI guess from backend
     const fetchGuess = async () => {
       try {
-        const res = await fetch("https://dissertation-app.onrender.com/guess", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ answers }),
-        });
+        const res = await fetch(
+          "https://public-engagement-app.onrender.com/guess",
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ answers }),
+          },
+        );
 
         if (!res.ok) {
           throw new Error("Server error");
