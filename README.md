@@ -1,17 +1,8 @@
 # AI in Social Care
 
-An interactive web application designed to help non-expert users explore how artificial intelligence works in social care contexts.
+## Overview
 
----
-
-## Live Demo
-
-Frontend: https://dissertation-app.netlify.app
-Backend: Hosted on Render
-
-Users can also access the application by scanning the QR code:
-
-<img src="./public/qr-code.png" width="200" alt="QR code"/>
+AI in Social Care combines educational content, interactive activities, and AI-powered features to encourage public engagement with emerging technologies. The application aims to improve understanding of AI concepts while highlighting important topics such as fairness, bias, and responsible AI use.
 
 ---
 
@@ -19,19 +10,33 @@ Users can also access the application by scanning the QR code:
 
 ### AI Quiz
 
-A short interactive quiz introducing key AI concepts and ethical issues such as bias and fairness.
+- Interactive quiz introducing key AI concepts
+- Explores topics such as fairness, bias, and decision-making
+- Accessible and user-friendly interface
 
-### AI Guess Game
+### AI Guess Activity
 
-Users answer short questions, and the Gemini API generates a prediction (e.g. age, hobby, personality). This demonstrates that AI outputs are based on patterns rather than genuine understanding.
+- Users answer a series of questions
+- AI generates predictions based on response patterns
+- Demonstrates how AI makes inferences from data
 
-### AI Image Generation
+### AI Visualisation Activity
 
-Users enter an idea about AI in social care, and the Gemini API generates an image to show how generative AI interprets prompts.
+- Users submit ideas relating to AI in social care
+- AI generates visual representations from prompts
+- Encourages discussion around future AI applications
+
+### Accessibility Features
+
+- Adjustable text size
+- High contrast mode
+- Dyslexia-friendly font support
+- Responsive design
+- Keyboard-accessible controls
 
 ---
 
-## Tech Stack
+## Technologies
 
 ### Frontend
 
@@ -44,11 +49,10 @@ Users enter an idea about AI in social care, and the Gemini API generates an ima
 
 - Node.js
 - Express.js
-- JSON
 
-### AI integration
+### AI Integration
 
-- Google Gemini API (@google/genai)
+- Google Gemini API
 
 ### Deployment
 
@@ -57,75 +61,107 @@ Users enter an idea about AI in social care, and the Gemini API generates an ima
 
 ---
 
-## Requirements
+## Installation
 
-- Node.js
-- npm
-- Google Gemini API key
-
----
-
-## Getting Started
-
-### 1. Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/Salmah1/dissertation-app.git
 cd dissertation-app
 ```
 
-### 2. Set up environment variables
+Install dependencies:
 
-Create a `.env` file inside the `server` folder:
+```bash
+npm install
+```
+
+Create a `.env` file and add:
 
 ```env
 GEMINI_API_KEY=your_api_key_here
 ```
 
-### 3. Install frontend dependencies
-
-From the project root:
-
-```bash
-npm install
-```
-
-### 4. Run the frontend
+Start the application:
 
 ```bash
 npm start
 ```
 
-The frontend should run on:
+---
+
+## Project Structure
 
 ```text
-http://localhost:3000
-```
-
-### 5. Run the backend
-
-Open a second terminal and run:
-
-```bash
-cd server
-npm install
-node index.js
-```
-
-The backend should run on:
-
-```text
-http://localhost:3001
+dissertation-app/
+│
+├── public/
+├── screenshots/
+│
+├── server/
+│   ├── images/
+│   ├── data.txt
+│   └── index.js
+│
+├── src/
+│   ├── components/
+│   │   └── AccessibilityPanel.js
+│   │
+│   ├── data/
+│   │   ├── guessQuestions.js
+│   │   └── quizQuestions.js
+│   │
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── QuizIntro.js
+│   │   ├── Quiz.js
+│   │   ├── QuizResults.js
+│   │   ├── GuessIntro.js
+│   │   ├── Guess.js
+│   │   ├── GuessResults.js
+│   │   ├── Output.js
+│   │   └── Final.js
+│   │
+│   ├── styles/
+│   │   ├── Accessibility.css
+│   │   ├── Global.css
+│   │   ├── Home.css
+│   │   ├── Quiz.css
+│   │   ├── Guess.css
+│   │   ├── Output.css
+│   │   ├── Final.css
+│   │   └── HighContrast.css
+│   │
+│   ├── App.js
+│   └── index.js
+│
+└── README.md
 ```
 
 ---
 
-## Notes
+## Screenshots
 
-The application requires a valid Gemini API key for prediction and image generation features. If the API fails or does not return a valid response, fallback outputs are displayed to maintain application continuity.
+### Home Screen
 
----
+![Home Screen](./screenshots/home.png)
 
-### Author
+### AI Quiz
 
-Salmah Abdullahi
+![AI Quiz](./screenshots/quiz.png)
+
+### Quiz Results
+
+![Quiz Results](./screenshots/quiz-results.png)
+
+### AI Guess Results
+
+![AI Guess Results](./screenshots/guess-results.png)
+
+### Accessibility Mode
+
+![Accessibility Mode](./screenshots/guess-dark.png)
+
+### AI Visualisation Activity
+
+![AI Visualisation Activity](./screenshots/output.png)
